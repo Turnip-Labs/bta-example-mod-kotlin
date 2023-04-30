@@ -11,7 +11,7 @@ import static turniplabs.halplibe.HalpLibe.LOGGER;
 @Mixin(value = GuiMainMenu.class, remap = false)
 public class GuiMainMenuMixin {
     @Inject(method = "<clinit>", at = @At("HEAD"))
-    private static void examplemod$onClninit(CallbackInfo ci) {
+    private static void examplemod$onClinit(CallbackInfo ci) {
         LOGGER.info("This line is printed by the example Mixin!");
     }
 }

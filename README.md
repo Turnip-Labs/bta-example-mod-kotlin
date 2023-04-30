@@ -11,7 +11,7 @@ Babric example mod for BTA.
 
 1. Download or clone this repository and put it somewhere.
 ```
-git clone https://github.com/Turnip-Labs/bta-minimal-mod.git
+git clone https://github.com/Turnip-Labs/bta-example-mod-kotlin.git
 ```
 
 2. Import the project in IntelliJ IDEA, close it and open it again.

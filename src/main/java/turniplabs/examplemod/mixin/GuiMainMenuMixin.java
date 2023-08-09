@@ -1,6 +1,6 @@
 package turniplabs.examplemod.mixin;
 
-import net.minecraft.src.GuiMainMenu;
+import net.minecraft.client.gui.GuiMainMenu;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

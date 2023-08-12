@@ -18,14 +18,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-        {
-          "adapter": "kotlin",
-          "value": "turniplabs.examplemod.ExampleModKt::init"
-        }
+      {
+        "adapter": "kotlin",
+        "value": "turniplabs.examplemod.ExampleMod"
+      }
     ]
   },
   "mixins": [
-      "examplemod.mixins.json"
+    "examplemod.mixins.json"
   ],
 
   "depends": {

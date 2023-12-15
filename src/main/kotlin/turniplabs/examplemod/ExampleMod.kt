@@ -5,8 +5,10 @@ import net.java.games.input.Component.Identifier.Key.T
 import org.checkerframework.common.returnsreceiver.qual.This
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
+import turniplabs.halplibe.util.GameStartEntrypoint
+import turniplabs.halplibe.util.RecipeEntrypoint
 
-object ExampleMod: ModInitializer {
+object ExampleMod: ModInitializer, GameStartEntrypoint, RecipeEntrypoint {
     @JvmField
     val MODID: String = "examplemod"
 
@@ -20,5 +22,17 @@ object ExampleMod: ModInitializer {
 
         LOGGER.info("Hello Fabric world!")
     }
+
+	override fun beforeGameStart() {
+
+	}
+
+	override fun afterGameStart() {
+
+	}
+
+	override fun onRecipesReady() {
+
+	}
 
 }

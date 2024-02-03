@@ -1,8 +1,6 @@
 package turniplabs.examplemod
 
 import net.fabricmc.api.ModInitializer
-import net.java.games.input.Component.Identifier.Key.T
-import org.checkerframework.common.returnsreceiver.qual.This
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import turniplabs.halplibe.util.GameStartEntrypoint

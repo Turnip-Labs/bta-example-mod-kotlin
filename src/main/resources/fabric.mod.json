@@ -22,7 +22,25 @@
         "adapter": "kotlin",
         "value": "turniplabs.examplemod.ExampleMod"
       }
-    ]
+    ],
+    "beforeGameStart": [
+			{
+        "adapter": "kotlin",
+        "value": "turniplabs.examplemod.ExampleMod"
+      }
+		],
+		"afterGameStart": [
+			{
+        "adapter": "kotlin",
+        "value": "turniplabs.examplemod.ExampleMod"
+      }
+		],
+		"recipesReady": [
+			{
+        "adapter": "kotlin",
+        "value": "turniplabs.examplemod.ExampleMod"
+      }
+		]
   },
   "mixins": [
     "examplemod.mixins.json"

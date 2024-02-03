@@ -24,19 +24,19 @@
       }
     ],
     "beforeGameStart": [
-			{
+      {
         "adapter": "kotlin",
         "value": "turniplabs.examplemod.ExampleMod"
       }
 		],
-		"afterGameStart": [
-			{
+    "afterGameStart": [
+      {
         "adapter": "kotlin",
         "value": "turniplabs.examplemod.ExampleMod"
       }
 		],
-		"recipesReady": [
-			{
+    "recipesReady": [
+      {
         "adapter": "kotlin",
         "value": "turniplabs.examplemod.ExampleMod"
       }

@@ -1,5 +1,5 @@
 plugins {
-	id 'babric-loom' version '1.1.+'
+	id 'fabric-loom'
 	id 'org.jetbrains.kotlin.jvm'
 }
 
@@ -8,9 +8,9 @@ archivesBaseName = project.mod_name
 version = project.mod_version
 
 loom {
-	gluedMinecraftJar()
+	// gluedMinecraftJar()
 	noIntermediateMappings()
-	customMinecraftManifest.set("https://github.com/Turnip-Labs/bta-manifest-repo/releases/download/v${project.bta_version}/${project.bta_version}.json")
+	setCustomMinecraftManifest("https://github.com/Turnip-Labs/bta-manifest-repo/releases/download/v${project.bta_version}/${project.bta_version}.json")
 }
 
 repositories {
@@ -97,7 +97,6 @@ dependencies {
 	implementation("org.apache.logging.log4j:log4j-api:${log4jVersion}")
 	implementation("org.apache.logging.log4j:log4j-1.2-api:${log4jVersion}")
 	include(implementation("org.apache.commons:commons-lang3:3.12.0"))
-
 
 	modImplementation("net.fabricmc:fabric-language-kotlin:${project.flk_version}+kotlin.${project.kotlin_version}") {
 		exclude(group: "net.fabricmc", module: "fabric-loader")

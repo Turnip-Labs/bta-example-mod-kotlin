@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import turniplabs.examplemod.ExampleMod;
 
 @Mixin(value = ScreenMainMenu.class, remap = false)
-public class GuiMainMenuMixin {
+public class ScreenMainMenuMixin {
     @Inject(method = "<clinit>", at = @At("HEAD"))
     private static void examplemod$onClinit(CallbackInfo ci) {
         ExampleMod.LOGGER.info("This line is printed by the example Mixin!");

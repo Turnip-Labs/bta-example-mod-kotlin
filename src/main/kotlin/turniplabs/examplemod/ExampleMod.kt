@@ -6,26 +6,12 @@ import org.slf4j.LoggerFactory
 import turniplabs.halplibe.util.GameStartEntrypoint
 import turniplabs.halplibe.util.RecipeEntrypoint
 
-object ExampleMod: ModInitializer, GameStartEntrypoint, RecipeEntrypoint {
-	const val MODID: String = "examplemod"
-
-	@JvmField
-	val LOGGER: Logger = LoggerFactory.getLogger(MODID)
+object ExampleMod : ModInitializer, GameStartEntrypoint, RecipeEntrypoint {
+	const val MOD_ID: String = "examplemod"
+	@JvmField val LOGGER: Logger = LoggerFactory.getLogger(MOD_ID)
 
 	override fun onInitialize() {
-        // This code runs as soon as Minecraft is in a mod-load-ready state.
-        // However, some things (like resources) may still be uninitialized.
-        // Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!")
-	}
-
-	override fun beforeGameStart() {
-
-	}
-
-	override fun afterGameStart() {
-
+		LOGGER.info("ExampleMod initialized.")
 	}
 
 	override fun onRecipesReady() {
@@ -33,6 +19,14 @@ object ExampleMod: ModInitializer, GameStartEntrypoint, RecipeEntrypoint {
 	}
 
 	override fun initNamespaces() {
+
+	}
+
+	override fun beforeGameStart() {
+
+	}
+
+	override fun afterGameStart() {
 
 	}
 }

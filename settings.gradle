@@ -1,22 +1,25 @@
 pluginManagement {
-    repositories {
-        maven {
-            name = 'Fabric'
-            url = 'https://maven.fabricmc.net/'
-        }
-        gradlePluginPortal()
-        maven {
-            name = 'Jitpack'
-            url = 'https://jitpack.io'
-        }
-        maven {
-            name = 'Babric'
-            url = 'https://maven.glass-launcher.net/babric'
-        }
-    }
+	repositories {
+		gradlePluginPortal()
+		maven {
+			name = 'Fabric'
+			url = 'https://maven.fabricmc.net/'
+		}
+		maven {
+			name = 'Jitpack'
+			url = 'https://jitpack.io'
+		}
+		maven {
+			name = 'Babric'
+			url = 'https://maven.glass-launcher.net/babric'
+		}
+		maven {
+			name = 'SignalumMavenInfrastructure'
+			url = 'https://maven.thesignalumproject.net/infrastructure'
+		}
+	}
 
-    plugins {
-        id 'fabric-loom' version '1.7-SNAPSHOT'
-        id "org.jetbrains.kotlin.jvm" version kotlin_version
-    }
+	plugins {
+		id "org.jetbrains.kotlin.jvm" version kotlin_version
+	}
 }

@@ -3,11 +3,9 @@
 import org.apache.tools.ant.taskdefs.condition.Os
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
-val kotlin_version: String by project
-
 plugins {
     id("fabric-loom") version "1.10.0-bta"
-    kotlin("jvm") version kotlin_version
+    kotlin("jvm") version "2.1.21"
 }
 
 val lwjglVersion = "3.3.4"
@@ -32,6 +30,7 @@ val halplibe_version: String by project
 val mod_menu_version: String by project
 
 //val flk_version: String by project
+//val kotlin_version: String by project
 
 group = mod_group
 base.archivesName.set(mod_name)

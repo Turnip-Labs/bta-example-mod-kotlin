@@ -20,13 +20,17 @@ val lwjglNatives = when {
 val mod_group: String by project
 val mod_name: String by project
 val mod_version: String by project
+
 val bta_channel: String by project
 val bta_version: String by project
+
 val loader_version: String by project
+
 val halplibe_version: String by project
 val mod_menu_version: String by project
-val flk_version: String by project
-val kotlin_version: String by project
+
+//val flk_version: String by project
+//val kotlin_version: String by project
 
 group = mod_group
 base.archivesName.set(mod_name)
@@ -129,7 +133,7 @@ dependencies {
     implementation("org.lwjgl:lwjgl-opengl:$lwjglVersion")
     implementation("org.lwjgl:lwjgl-stb:$lwjglVersion")
 
-    modImplementation("net.fabricmc:fabric-language-kotlin:$flk_version+kotlin.$kotlin_version") {
+    modImplementation("net.fabricmc:fabric-language-kotlin:1.11.0+kotlin.2.0.0") {
         exclude(group = "net.fabricmc", module = "fabric-loader")
     }
 }

@@ -13,7 +13,7 @@ val lwjglVersion = "3.3.4"
 val lwjglNatives = when {
     Os.isFamily(Os.FAMILY_UNIX) && !Os.isFamily(Os.FAMILY_MAC) -> "natives-linux"
     Os.isFamily(Os.FAMILY_WINDOWS) -> "natives-windows"
-    Os.isFamily(Os.FAMILY_MAC) -> "natives-macos"
+    Os.isFamily(Os.FAMILY_MAC) -> "natives-macos${if (Os.isArch("aarch64")) "-arm64" else ""}"
     else -> error("Unsupported OS")
 }
 

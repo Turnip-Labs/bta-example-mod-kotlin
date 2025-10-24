@@ -1,4 +1,4 @@
-# Example Mod - Kotlin
+# Example Mod
 
 Template for making Babric mods for BTA!
 
@@ -10,10 +10,10 @@ Template for making Babric mods for BTA!
 - Minecraft Development plugin (Optional, but highly recommended)
 
 ## Setup instructions
-   
 
-1. Click the `Use this template` button on this repo's page above. Choose `Create a new repository`, you will be redirected to a new page. Enter your repo's name and description, and hit `Create repository`.  
-   To get your project, open IntelliJ IDEA and click `Get from VCS`. Select `Repository URL` and enter your repo's url
+
+1. Click the `Use this template` button on this repo's page above (Will only appear if logged in). Choose `Create a new repository`, you will be redirected to a new page. Enter your repo's name and description, and hit `Create repository`.  
+   To get your project, open IntelliJ IDEA and click `Clone Repository` (`Get from VCS` on older versions). Select `Repository URL` and enter your repo's url
 
 2. After the project has finished importing, close it and open it again.  
    If that does not work, open the right sidebar with `Gradle` on it, open `Tasks` > `fabric` and run `ideaSyncTask`.
@@ -34,4 +34,3 @@ Template for making Babric mods for BTA!
 3. When launching the server run configuration you may want to remove the `nogui` program argument in order to see the regular server GUI.
 4. In Intellij you can double press shift or press ctrl+N to search class files, change the search from the default `Project Files` to `All Places` you can easily explore the classes for you dependencies and even BTA itself.
 5. In Intellij if ctrl+left click on a field or method you can quickly get information on when and where that field or method is assign or used.
-

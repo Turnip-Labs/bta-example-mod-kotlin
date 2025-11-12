@@ -10,15 +10,11 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*.gradle]
+[*.gradle.kts]
 indent_style = tab
 
 [*.java]
 indent_style = tab
-
-[*.kt]
-indent_style = tab
-indent_size = 4
 
 [*.json]
 indent_style = space

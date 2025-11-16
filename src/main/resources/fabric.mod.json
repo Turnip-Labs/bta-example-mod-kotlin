@@ -1,56 +1,59 @@
 {
-  "schemaVersion": 1,
-  "id": "examplemod",
-  "version": "${version}",
+	"schemaVersion": 1,
+	"id": "examplemod",
+	"version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
-  "authors": [
-    "Turnip Labs"
-  ],
-  "contact": {
-    "homepage": "",
-    "sources": ""
-  },
+	"name": "Example Mod",
+	"description": "This mod aims to help new BTA modders.",
+	"authors": [
+		"Turnip Labs"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
 
-  "license": "CC0-1.0",
+	"license": "CC0-1.0",
 
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      {
-        "adapter": "kotlin",
-        "value": "turniplabs.examplemod.ExampleMod"
-      }
-    ],
-    "beforeGameStart": [
-      {
-        "adapter": "kotlin",
-        "value": "turniplabs.examplemod.ExampleMod"
-      }
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"adapter": "kotlin",
+				"value": "turniplabs.examplemod.ExampleMod"
+			}
 		],
-    "afterGameStart": [
-      {
-        "adapter": "kotlin",
-        "value": "turniplabs.examplemod.ExampleMod"
-      }
+		"beforeGameStart": [
+			{
+				"adapter": "kotlin",
+				"value": "turniplabs.examplemod.ExampleMod"
+			}
 		],
-    "recipesReady": [
-      {
-        "adapter": "kotlin",
-        "value": "turniplabs.examplemod.ExampleMod"
-      }
+		"afterGameStart": [
+			{
+				"adapter": "kotlin",
+				"value": "turniplabs.examplemod.ExampleMod"
+			}
+		],
+		"recipesReady": [
+			{
+				"adapter": "kotlin",
+				"value": "turniplabs.examplemod.ExampleMod"
+			}
 		]
-  },
-  "mixins": [
-    "examplemod.mixins.json"
-  ],
+	},
+	"mixins": [
+		"examplemod.mixins.json"
+	],
 
-  "depends": {
+	"depends": {
+		"fabricloader": ">=${fabricloader}",
+		"fabric-language-kotlin": ">=${fabric_language_kotlin}",
+		"halplibe": ">=${halplibe}",
 		"minecraft": "*",
-    "fabricloader": ">=0.15.5",
-    "fabric-language-kotlin": "*"
-  },
-  "suggests": {
-  }
+		"java": ">=${java}"
+	},
+	"suggests": {
+		"modmenu": ">=${modmenu}"
+	}
 }

@@ -1,27 +1,22 @@
+val modName = providers.gradleProperty("mod_name")
+rootProject.name = modName.get()
 pluginManagement {
-    val kotlin_version: String by settings
-
-    repositories {
-        gradlePluginPortal()
-        maven {
-            name = "Fabric"
-            url = uri("https://maven.fabricmc.net/")
-        }
-        maven {
-            name = "Jitpack"
-            url = uri("https://jitpack.io")
-        }
-        maven {
-            name = "Babric"
-            url = uri("https://maven.glass-launcher.net/babric")
-        }
-        maven {
-            name = "SignalumMavenInfrastructure"
-            url = uri("https://maven.thesignalumproject.net/infrastructure")
-        }
-    }
-
-    plugins {
-        kotlin("jvm") version kotlin_version
-    }
+	repositories {
+		gradlePluginPortal()
+		maven("https://maven.fabricmc.net/") { name = "Fabric" }
+		maven("https://jitpack.io") { name = "Jitpack" }
+		maven("https://maven.glass-launcher.net/babric") { name = "Babric" }
+		maven("https://maven.thesignalumproject.net/infrastructure") { name = "SignalumMavenInfrastructure" }
+	}
+	val foojayResolverVersion = providers.gradleProperty("foojay_resolver_version")
+	val loomVersion = providers.gradleProperty("loom_version")
+	val kotlinVersion = providers.gradleProperty("kotlin_version")
+	plugins {
+		id("org.gradle.toolchains.foojay-resolver-convention").version(foojayResolverVersion.get())
+		id("fabric-loom").version(loomVersion.get())
+		kotlin("jvm").version(kotlinVersion.get())
+	}
+}
+plugins {
+	id("org.gradle.toolchains.foojay-resolver-convention")
 }

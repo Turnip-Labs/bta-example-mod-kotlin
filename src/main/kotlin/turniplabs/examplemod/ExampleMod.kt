@@ -7,26 +7,18 @@ import turniplabs.halplibe.util.GameStartEntrypoint
 import turniplabs.halplibe.util.RecipeEntrypoint
 
 object ExampleMod : ModInitializer, GameStartEntrypoint, RecipeEntrypoint {
-	const val MOD_ID: String = "examplemod"
-	@JvmField val LOGGER: Logger = LoggerFactory.getLogger(MOD_ID)
+    const val MOD_ID: String = "examplemod"
+    val LOGGER: Logger = LoggerFactory.getLogger(MOD_ID)
 
-	override fun onInitialize() {
-		LOGGER.info("ExampleMod initialized.")
-	}
+    override fun onInitialize() {
+        LOGGER.info("ExampleMod initialized.")
+    }
 
-	override fun onRecipesReady() {
+    override fun onRecipesReady() {}
 
-	}
+    override fun initNamespaces() {}
 
-	override fun initNamespaces() {
+    override fun beforeGameStart() {}
 
-	}
-
-	override fun beforeGameStart() {
-
-	}
-
-	override fun afterGameStart() {
-
-	}
+    override fun afterGameStart() {}
 }

@@ -5,7 +5,7 @@ Template for making Babric mods for BTA!
 **Note: *DO NOT fork this repository unless you want to contribute!***
 
 ## Prerequisites
-- JDK for Java 17 ([Eclipse Temurin](https://adoptium.net/temurin/releases/) recommended)
+- JDK for Java 21 ([Eclipse Temurin](https://adoptium.net/temurin/releases/) recommended)
 - [Intellij IDEA](https://www.jetbrains.com/idea/download/) (Scroll down for the free community edition, if using linux **DO NOT** use the flatpak distribution)
 - Minecraft Development plugin (Optional, but highly recommended)
 
@@ -32,5 +32,8 @@ Template for making Babric mods for BTA!
 1. If you haven't already you should join the BTA modding discord! https://discord.gg/FTUNJhswBT
 2. You can set your username when launching the client run configuration by setting `--username <username>` in your program arguments.
 3. When launching the server run configuration you may want to remove the `nogui` program argument in order to see the regular server GUI.
-4. In Intellij you can double press shift or press ctrl+N to search class files, change the search from the default `Project Files` to `All Places` you can easily explore the classes for you dependencies and even BTA itself.
-5. In Intellij if ctrl+left click on a field or method you can quickly get information on when and where that field or method is assign or used.
+4. In Intellij you can double press shift or press ctrl+N to search class files, change the search from the default `Project Files` to `All Places` you can easily explore the classes for your dependencies and even BTA itself.
+5. In Intellij if ctrl+left-click on a field or method you can quickly get information on when and where that field or method is assign or used.
+6. Ensure IntelliJ is updated to the latest version. This is important because this template uses the latest Gradle version and if your IntelliJ installation is outdated, it may not support the latest version.
+7. In the `examplemod.mixins.json` you'll see `"compatibilityLevel": "JAVA_${java}",` along with an error message from the `Minecraft Development` plugin stating `Cannot resolve compatibility level 'JAVA_${java}'`. You can safely ignore this. The Gradle build system has been set up to grab the Java version from your `gradle.properties` and replace `${java}` with it. So the compiled binary will properly have it as `JAVA_8`.
+

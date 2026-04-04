@@ -4,7 +4,7 @@
 # Check this on https://github.com/FabricMC/fabric-loom/releases/latest/
 loom = "1.15-SNAPSHOT"
 # Check this on https://kotlinlang.org/docs/releases.html
-kotlin = "2.3.0"
+kotlin = "2.3.20"
 # Check this on https://plugins.gradle.org/plugin/com.smushytaco.lwjgl3/
 lwjglPlugin = "1.0.2"
 ##########################################################################

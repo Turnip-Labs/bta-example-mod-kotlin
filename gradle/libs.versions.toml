@@ -25,10 +25,10 @@ loader = "0.18.4-bta.10"
 modMenu = "4.0.0"
 # Check this on https://github.com/Turnip-Labs/bta-halplibe/releases/latest/
 halplibe = "5.4.0"
-# Check this on https://github.com/Better-than-Adventure/legacy-lwjgl3/releases/latest/
+# Check this on https://maven.thesignalumproject.net/#/infrastructure/com/github/Better-than-Adventure/legacy-lwjgl3/
 legacyLwjgl = "1.0.6"
 # Check this on https://modrinth.com/mod/fabric-language-kotlin/versions/
-fabric-language-kotlin = "1.13.8+kotlin.2.3.0"
+fabric-language-kotlin = "1.13.10+kotlin.2.3.20"
 ##########################################################################
 # Dependencies
 # Check this on https://central.sonatype.com/artifact/org.slf4j/slf4j-api/
